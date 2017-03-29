@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.78.0 commit date:2016-10-24, commit time:12:20, hash:e8299c8</authoring_tool>
     </contributor>
-    <created>2017-03-29T10:40:15</created>
-    <modified>2017-03-29T10:40:15</modified>
+    <created>2017-03-29T11:05:07</created>
+    <modified>2017-03-29T11:05:07</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -37,7 +37,7 @@
         <technique sid="common">
           <lambert>
             <emission>
-              <color sid="emission">0.5 0.5 0.5 1</color>
+              <color sid="emission">0 0 0 1</color>
             </emission>
             <ambient>
               <color sid="ambient">0 0 0 1</color>
@@ -60,7 +60,7 @@
         <technique sid="common">
           <lambert>
             <emission>
-              <color sid="emission">0.5 0.5 0.5 1</color>
+              <color sid="emission">0 0 0 1</color>
             </emission>
             <ambient>
               <color sid="ambient">0 0 0 1</color>
@@ -83,7 +83,7 @@
         <technique sid="common">
           <lambert>
             <emission>
-              <color sid="emission">0.5 0.5 0.5 1</color>
+              <color sid="emission">0 0 0 1</color>
             </emission>
             <ambient>
               <color sid="ambient">0 0 0 1</color>
@@ -2911,7 +2911,7 @@
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">0.6369225 0.6369225 0.8606141</scale>
+        <scale sid="scale">0.6369225 0.6369225 0.8307902</scale>
         <instance_geometry url="#Cone-mesh" name="midFlame">
           <bind_material>
             <technique_common>
@@ -2922,10 +2922,10 @@
       </node>
       <node id="dFlame1" name="dFlame1" type="NODE">
         <translate sid="location">-0.1201422 0.3389049 0.1415607</translate>
-        <rotate sid="rotationZ">0 0 1 0.4302244</rotate>
-        <rotate sid="rotationY">0 1 0 1.533818</rotate>
+        <rotate sid="rotationZ">0 0 1 0.4302243</rotate>
+        <rotate sid="rotationY">0 1 0 1.533817</rotate>
         <rotate sid="rotationX">1 0 0 -2.756247</rotate>
-        <scale sid="scale">0.7678151 0.7679271 0.8348089</scale>
+        <scale sid="scale">0.7677661 0.7677693 0.7696531</scale>
         <instance_geometry url="#Cone_002-mesh" name="dFlame1">
           <bind_material>
             <technique_common>
@@ -2939,7 +2939,7 @@
         <rotate sid="rotationZ">0 0 1 -123.6553</rotate>
         <rotate sid="rotationY">0 1 0 1.533817</rotate>
         <rotate sid="rotationX">1 0 0 -2.756247</rotate>
-        <scale sid="scale">0.612177 0.6122949 0.6813539</scale>
+        <scale sid="scale">0.6122195 0.6124317 0.7317095</scale>
         <instance_geometry url="#Cone_003-mesh" name="dFlame2">
           <bind_material>
             <technique_common>
@@ -2951,9 +2951,9 @@
       <node id="dFlame3" name="dFlame3" type="NODE">
         <translate sid="location">0.474872 -0.2561533 0.1442006</translate>
         <rotate sid="rotationZ">0 0 1 124.1234</rotate>
-        <rotate sid="rotationY">0 1 0 -8.536001</rotate>
+        <rotate sid="rotationY">0 1 0 -8.536002</rotate>
         <rotate sid="rotationX">1 0 0 16.22086</rotate>
-        <scale sid="scale">0.4644381 0.4319081 0.6463977</scale>
+        <scale sid="scale">0.4659972 0.4369075 0.7294329</scale>
         <instance_geometry url="#Cone_004-mesh" name="dFlame3">
           <bind_material>
             <technique_common>
@@ -2967,7 +2967,7 @@
         <rotate sid="rotationZ">0 0 1 177.9973</rotate>
         <rotate sid="rotationY">0 1 0 3.632047</rotate>
         <rotate sid="rotationX">1 0 0 -1.44233</rotate>
-        <scale sid="scale">0.464657 0.4317788 0.7295454</scale>
+        <scale sid="scale">0.4644734 0.431752 0.6529757</scale>
         <instance_geometry url="#Cone_005-mesh" name="dFlame4">
           <bind_material>
             <technique_common>
@@ -2981,7 +2981,7 @@
         <rotate sid="rotationZ">0 0 1 -100.4272</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">0.3291045 0.4494419 0.5915809</scale>
+        <scale sid="scale">0.3291045 0.4494419 0.6844077</scale>
         <instance_geometry url="#Cone_006-mesh" name="yFlame1">
           <bind_material>
             <technique_common>
@@ -2995,7 +2995,7 @@
         <rotate sid="rotationZ">0 0 1 -100.4272</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">0.3291045 0.4494419 0.5858533</scale>
+        <scale sid="scale">0.3291045 0.4494419 0.62524</scale>
         <instance_geometry url="#Cone_007-mesh" name="yFlame2">
           <bind_material>
             <technique_common>
@@ -3021,9 +3021,9 @@
       <node id="yFlame4" name="yFlame4" type="NODE">
         <translate sid="location">0.07339291 -0.06951518 1.273465</translate>
         <rotate sid="rotationZ">0 0 1 49.37067</rotate>
-        <rotate sid="rotationY">0 1 0 -7.720084</rotate>
+        <rotate sid="rotationY">0 1 0 -7.720083</rotate>
         <rotate sid="rotationX">1 0 0 24.23838</rotate>
-        <scale sid="scale">0.1190233 0.1629431 0.214335</scale>
+        <scale sid="scale">0.1189966 0.1626098 0.21224</scale>
         <instance_geometry url="#Cone_009-mesh" name="yFlame4">
           <bind_material>
             <technique_common>
@@ -3033,11 +3033,11 @@
         </instance_geometry>
       </node>
       <node id="spark1" name="spark1" type="NODE">
-        <translate sid="location">-0.1697697 0.1771351 1.971259</translate>
+        <translate sid="location">-0.1697697 0.1771351 2.208731</translate>
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">0.01705297 0.01705297 0.01705297</scale>
+        <scale sid="scale">0.00952185 0.00952185 0.00952185</scale>
         <instance_geometry url="#Icosphere-mesh" name="spark1">
           <bind_material>
             <technique_common>
@@ -3047,11 +3047,11 @@
         </instance_geometry>
       </node>
       <node id="spark2" name="spark2" type="NODE">
-        <translate sid="location">0.04188977 -0.03523706 1.827985</translate>
+        <translate sid="location">0.04188977 -0.03523706 2.105582</translate>
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">0.0115544 0.0115544 0.0115544</scale>
+        <scale sid="scale">0.0326856 0.0326856 0.0326856</scale>
         <instance_geometry url="#Icosphere_001-mesh" name="spark2">
           <bind_material>
             <technique_common>
@@ -3061,11 +3061,11 @@
         </instance_geometry>
       </node>
       <node id="spark3" name="spark3" type="NODE">
-        <translate sid="location">0.1952679 0.06370357 2.069437</translate>
+        <translate sid="location">0.1952679 0.06370357 2.171689</translate>
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">0.00991485 0.00991485 0.00991485</scale>
+        <scale sid="scale">0.04088969 0.04088969 0.04088969</scale>
         <instance_geometry url="#Icosphere_002-mesh" name="spark3">
           <bind_material>
             <technique_common>
