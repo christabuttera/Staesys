@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.78.0 commit date:2017-02-08, commit time:13:50, hash:3c04373</authoring_tool>
     </contributor>
-    <created>2017-03-30T15:07:47</created>
-    <modified>2017-03-30T15:07:47</modified>
+    <created>2017-04-05T10:15:08</created>
+    <modified>2017-04-05T10:15:08</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -17,7 +17,7 @@
         <technique sid="common">
           <lambert>
             <emission>
-              <color sid="emission">0.5 0.5 0.5 1</color>
+              <color sid="emission">0.25 0.25 0.25 1</color>
             </emission>
             <ambient>
               <color sid="ambient">0 0 0 1</color>
@@ -126,6 +126,39 @@
         <polylist material="Material_002-material" count="32">
           <input semantic="VERTEX" source="#Plane-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Plane-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>7 0 6 0 8 0 2 1 8 1 4 1 4 2 5 2 0 2 8 3 1 3 5 3 15 4 16 4 17 4 17 5 11 5 13 5 14 6 13 6 9 6 10 7 17 7 14 7 1 8 15 8 10 8 4 9 11 9 2 9 6 10 12 10 15 10 0 11 13 11 4 11 7 12 12 12 3 12 0 13 14 13 9 13 2 14 16 14 7 14 5 15 10 15 14 15 7 16 3 16 6 16 2 17 7 17 8 17 4 18 8 18 5 18 8 19 6 19 1 19 15 20 12 20 16 20 17 21 16 21 11 21 14 22 17 22 13 22 10 23 15 23 17 23 1 24 6 24 15 24 4 25 13 25 11 25 6 26 3 26 12 26 0 27 9 27 13 27 7 28 16 28 12 28 0 29 5 29 14 29 2 30 11 30 16 30 5 31 1 31 10 31</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Plane_001-mesh" name="Plane.001">
+      <mesh>
+        <source id="Plane_001-mesh-positions">
+          <float_array id="Plane_001-mesh-positions-array" count="54">0.02505296 0.03464895 -0.004499495 0.2904272 0.1662367 -0.1645764 -0.0451979 0.3601768 -0.20512 0.1881421 0.4968897 -0.3600404 -0.0229038 0.2130804 -0.111925 0.1923705 0.1035399 -0.09593665 0.2860719 0.3781815 -0.3063224 0.06731879 0.4732111 -0.3115903 0.1306895 0.2857293 -0.1585344 0.0243681 0.03311961 -0.006220996 0.2897424 0.1647073 -0.1662978 -0.04588294 0.3586474 -0.2068414 0.1874573 0.4953602 -0.3617618 -0.02358877 0.211551 -0.1136464 0.1916854 0.1020106 -0.09765815 0.2853869 0.3766521 -0.308044 0.06663393 0.4716817 -0.3133118 0.1125026 0.2451205 -0.2042403</float_array>
+          <technique_common>
+            <accessor source="#Plane_001-mesh-positions-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_001-mesh-normals">
+          <float_array id="Plane_001-mesh-normals-array" count="96">-0.270772 -0.6620431 -0.698843 -0.002984583 -0.5355121 -0.8445224 -0.2175664 -0.5456886 -0.809252 -0.3356647 -0.4057317 -0.8501242 0.1769931 0.4557849 0.8723151 0.3720071 0.536359 0.7575814 0.2175665 0.5456889 0.8092519 0.1258139 0.6363973 0.7610318 -0.9570165 0.1473907 0.2497912 0.9447948 -0.06079685 -0.321973 -0.7328191 -0.3370863 0.5910575 0.9235444 0.01757925 -0.3830884 0.3636453 -0.7634894 0.5337098 -0.5350393 0.7259661 -0.4320951 0.7840884 -0.5848718 0.207679 -0.6622252 0.6713212 -0.3328449 -0.2175671 -0.5456884 -0.809252 -0.07162106 -0.6451915 -0.7606566 -0.1126671 -0.3567758 -0.9273712 -0.411822 -0.5124224 -0.7535423 0.2175668 0.5456879 0.8092525 0.3181014 0.4627533 0.8274484 0.2899663 0.6696514 0.6837299 0.0746985 0.5554275 0.8282032 -0.9569983 0.1474264 0.2498395 0.9448081 -0.06077307 -0.3219382 -0.7328308 -0.337098 0.5910364 0.9235565 0.01760196 -0.3830586 0.3636371 -0.7635182 0.5336741 -0.5350326 0.726001 -0.4320448 0.7840685 -0.5849122 0.2076401 -0.6622468 0.6712618 -0.3329218</float_array>
+          <technique_common>
+            <accessor source="#Plane_001-mesh-normals-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane_001-mesh-vertices">
+          <input semantic="POSITION" source="#Plane_001-mesh-positions"/>
+        </vertices>
+        <polylist material="Material_002-material" count="32">
+          <input semantic="VERTEX" source="#Plane_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane_001-mesh-normals" offset="1"/>
           <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
           <p>7 0 6 0 8 0 2 1 8 1 4 1 4 2 5 2 0 2 8 3 1 3 5 3 15 4 16 4 17 4 17 5 11 5 13 5 14 6 13 6 9 6 10 7 17 7 14 7 1 8 15 8 10 8 4 9 11 9 2 9 6 10 12 10 15 10 0 11 13 11 4 11 7 12 12 12 3 12 0 13 14 13 9 13 2 14 16 14 7 14 5 15 10 15 14 15 7 16 3 16 6 16 2 17 7 17 8 17 4 18 8 18 5 18 8 19 6 19 1 19 15 20 12 20 16 20 17 21 16 21 11 21 14 22 17 22 13 22 10 23 15 23 17 23 1 24 6 24 15 24 4 25 13 25 11 25 6 26 3 26 12 26 0 27 9 27 13 27 7 28 16 28 12 28 0 29 5 29 14 29 2 30 11 30 16 30 5 31 1 31 10 31</p>
         </polylist>
@@ -289,16 +322,172 @@
       </sampler>
       <channel source="#LeftWing_rotation_euler_Z-sampler" target="LeftWing/rotationZ.ANGLE"/>
     </animation>
+    <animation id="RightWing_rotation_euler_X">
+      <source id="RightWing_rotation_euler_X-input">
+        <float_array id="RightWing_rotation_euler_X-input-array" count="3">0 0.125 0.25</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_X-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_X-output">
+        <float_array id="RightWing_rotation_euler_X-output-array" count="3">68.70381 50.86137 68.70381</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_X-output-array" count="3" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_X-interpolation">
+        <Name_array id="RightWing_rotation_euler_X-interpolation-array" count="3">BEZIER BEZIER BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_X-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_X-intangent">
+        <float_array id="RightWing_rotation_euler_X-intangent-array" count="6">-0.04880142 68.70381 0.07619851 50.86137 0.2011985 68.70381</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_X-intangent-array" count="3" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_X-outtangent">
+        <float_array id="RightWing_rotation_euler_X-outtangent-array" count="6">0.04880142 68.70381 0.1738014 50.86137 0.2988014 68.70381</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_X-outtangent-array" count="3" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="RightWing_rotation_euler_X-sampler">
+        <input semantic="INPUT" source="#RightWing_rotation_euler_X-input"/>
+        <input semantic="OUTPUT" source="#RightWing_rotation_euler_X-output"/>
+        <input semantic="INTERPOLATION" source="#RightWing_rotation_euler_X-interpolation"/>
+        <input semantic="IN_TANGENT" source="#RightWing_rotation_euler_X-intangent"/>
+        <input semantic="OUT_TANGENT" source="#RightWing_rotation_euler_X-outtangent"/>
+      </sampler>
+      <channel source="#RightWing_rotation_euler_X-sampler" target="RightWing/rotationX.ANGLE"/>
+    </animation>
+    <animation id="RightWing_rotation_euler_Y">
+      <source id="RightWing_rotation_euler_Y-input">
+        <float_array id="RightWing_rotation_euler_Y-input-array" count="3">0 0.125 0.25</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_Y-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_Y-output">
+        <float_array id="RightWing_rotation_euler_Y-output-array" count="3">-5.054762 7.841354 -5.054762</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_Y-output-array" count="3" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_Y-interpolation">
+        <Name_array id="RightWing_rotation_euler_Y-interpolation-array" count="3">BEZIER BEZIER BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_Y-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_Y-intangent">
+        <float_array id="RightWing_rotation_euler_Y-intangent-array" count="6">-0.04880142 -5.054762 0.07619851 7.841354 0.2011985 -5.054762</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_Y-intangent-array" count="3" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_Y-outtangent">
+        <float_array id="RightWing_rotation_euler_Y-outtangent-array" count="6">0.04880142 -5.054762 0.1738014 7.841354 0.2988014 -5.054762</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_Y-outtangent-array" count="3" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="RightWing_rotation_euler_Y-sampler">
+        <input semantic="INPUT" source="#RightWing_rotation_euler_Y-input"/>
+        <input semantic="OUTPUT" source="#RightWing_rotation_euler_Y-output"/>
+        <input semantic="INTERPOLATION" source="#RightWing_rotation_euler_Y-interpolation"/>
+        <input semantic="IN_TANGENT" source="#RightWing_rotation_euler_Y-intangent"/>
+        <input semantic="OUT_TANGENT" source="#RightWing_rotation_euler_Y-outtangent"/>
+      </sampler>
+      <channel source="#RightWing_rotation_euler_Y-sampler" target="RightWing/rotationY.ANGLE"/>
+    </animation>
+    <animation id="RightWing_rotation_euler_Z">
+      <source id="RightWing_rotation_euler_Z-input">
+        <float_array id="RightWing_rotation_euler_Z-input-array" count="3">0 0.125 0.25</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_Z-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_Z-output">
+        <float_array id="RightWing_rotation_euler_Z-output-array" count="3">35.80858 35.36841 35.80858</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_Z-output-array" count="3" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_Z-interpolation">
+        <Name_array id="RightWing_rotation_euler_Z-interpolation-array" count="3">BEZIER BEZIER BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_Z-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_Z-intangent">
+        <float_array id="RightWing_rotation_euler_Z-intangent-array" count="6">-0.04880142 35.80858 0.07619851 35.36841 0.2011985 35.80858</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_Z-intangent-array" count="3" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="RightWing_rotation_euler_Z-outtangent">
+        <float_array id="RightWing_rotation_euler_Z-outtangent-array" count="6">0.04880142 35.80858 0.1738014 35.36841 0.2988014 35.80858</float_array>
+        <technique_common>
+          <accessor source="#RightWing_rotation_euler_Z-outtangent-array" count="3" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="RightWing_rotation_euler_Z-sampler">
+        <input semantic="INPUT" source="#RightWing_rotation_euler_Z-input"/>
+        <input semantic="OUTPUT" source="#RightWing_rotation_euler_Z-output"/>
+        <input semantic="INTERPOLATION" source="#RightWing_rotation_euler_Z-interpolation"/>
+        <input semantic="IN_TANGENT" source="#RightWing_rotation_euler_Z-intangent"/>
+        <input semantic="OUT_TANGENT" source="#RightWing_rotation_euler_Z-outtangent"/>
+      </sampler>
+      <channel source="#RightWing_rotation_euler_Z-sampler" target="RightWing/rotationZ.ANGLE"/>
+    </animation>
   </library_animations>
   <library_controllers/>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Icosphere" name="Icosphere" type="NODE">
-        <translate sid="location">-0.7645149 -0.5566034 2.958207</translate>
-        <rotate sid="rotationZ">0 0 1 23.93777</rotate>
-        <rotate sid="rotationY">0 1 0 -3.219415</rotate>
-        <rotate sid="rotationX">1 0 0 0.3195867</rotate>
-        <scale sid="scale">1 1 0.9999999</scale>
+        <translate sid="location">-0.7716779 -0.5561414 2.940863</translate>
+        <rotate sid="rotationZ">0 0 1 27.03777</rotate>
+        <rotate sid="rotationY">0 1 0 -1.919415</rotate>
+        <rotate sid="rotationX">1 0 0 0.3195868</rotate>
+        <scale sid="scale">1 0.9999999 1</scale>
         <instance_geometry url="#Icosphere-mesh" name="Icosphere">
           <bind_material>
             <technique_common>
@@ -308,11 +497,11 @@
         </instance_geometry>
       </node>
       <node id="LeftWing" name="LeftWing" type="NODE">
-        <translate sid="location">-0.8155134 -0.5034965 3.041695</translate>
-        <rotate sid="rotationZ">0 0 1 35.70226</rotate>
+        <translate sid="location">-0.8264364 -0.5082268 3.045329</translate>
+        <rotate sid="rotationZ">0 0 1 38.20226</rotate>
         <rotate sid="rotationY">0 1 0 -1.939665</rotate>
-        <rotate sid="rotationX">1 0 0 64.39392</rotate>
-        <scale sid="scale">0.4877814 0.4877814 0.4877814</scale>
+        <rotate sid="rotationX">1 0 0 61.79392</rotate>
+        <scale sid="scale">0.4877814 0.4877814 0.4877813</scale>
         <instance_geometry url="#Plane-mesh" name="LeftWing">
           <bind_material>
             <technique_common>
@@ -321,12 +510,19 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="Empty" name="Empty" type="NODE">
-        <translate sid="location">-0.8155135 -0.5326298 3.041695</translate>
-        <rotate sid="rotationZ">0 0 1 -109.5727</rotate>
-        <rotate sid="rotationY">0 1 0 0</rotate>
-        <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">0.09990417 0.09990417 0.09990418</scale>
+      <node id="RightWing" name="RightWing" type="NODE">
+        <translate sid="location">-0.8347988 -0.5587463 3.06192</translate>
+        <rotate sid="rotationZ">0 0 1 93.00227</rotate>
+        <rotate sid="rotationY">0 1 0 155.8603</rotate>
+        <rotate sid="rotationX">1 0 0 1.906</rotate>
+        <scale sid="scale">0.488 0.488 0.4877813</scale>
+        <instance_geometry url="#Plane_001-mesh" name="RightWing">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_002-material" target="#Material_002-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
       </node>
     </visual_scene>
   </library_visual_scenes>
